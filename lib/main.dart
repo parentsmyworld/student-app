@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
                 child: RaisedButton(
                     onPressed: () => {},
                     child: Text("SUBMIT"),
-                    color: Colors.green),
+                    color: Colors.blue),
               )
             ],
           ),
