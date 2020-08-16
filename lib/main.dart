@@ -29,7 +29,9 @@ class MyApp extends StatelessWidget {
                   controller: name,
                   decoration: InputDecoration(
                     hintText: "Enter Name",
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10.0)
+                    ),
                     prefixIcon: Icon(Icons.keyboard),
                   ),
                 ),
@@ -37,7 +39,9 @@ class MyApp extends StatelessWidget {
                 TextField(
                   controller: rollno,
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10.0)
+                    ),
                       prefixIcon: Icon(Icons.keyboard),
                     hintText: "Enter Roll No."
                   ),
@@ -46,7 +50,9 @@ class MyApp extends StatelessWidget {
                 TextField(
                   controller: admno,
                   decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.0)
+                      ),
                       prefixIcon: Icon(Icons.keyboard),
                       hintText: "Admission No."
                   ),
@@ -55,26 +61,37 @@ class MyApp extends StatelessWidget {
                 TextField(
                   controller: collname,
                   decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.0)
+                      ),
                       prefixIcon: Icon(Icons.keyboard),
                       hintText: "College Name"
                   ),
                 ),
-                Center(
-                  child: RaisedButton(
-                      onPressed: (){
-                        var a=name.text;
-                        var b=rollno.text;
-                        var c=admno.text;
-                        var d=collname.text;
-                        print(a);
-                        print(b);
-                        print(c);
-                        print(d);
-                        },
-                      child: Text("SUBMIT"),
-                      color: Colors.blue),
-                )
+SizedBox(height: 20.0,),
+Container(
+  decoration: BoxDecoration(
+    color: Colors.blue,
+    borderRadius: BorderRadius.circular(10.0)
+  ),
+  height: 60.0,
+  child: Center(child: Text("SUBMIT")),
+)
+//                Center(
+//                  child: RaisedButton(
+//                      onPressed: (){
+//                        var a=name.text;
+//                        var b=rollno.text;
+//                        var c=admno.text;
+//                        var d=collname.text;
+//                        print(a);
+//                        print(b);
+//                        print(c);
+//                        print(d);
+//                        },
+//                      child: Text("SUBMIT"),
+//                      color: Colors.blue),
+//                )
               ],
             ),
           ),
